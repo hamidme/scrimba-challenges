@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;700&family=Karla:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Password Generator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h2 class="title">Generate a <span> random password</span></h2>
+      <p class="sub-title">Never use an insecure password again.</p>
+    </div>
+    
+      <div id="form">
+        <p class="selector-title">Select a level of complexity:</p>
+        <div>
+          <input type="radio" id="passwordChoice1"
+           name="Password" value="5">
+          <label for="passwordChoice1">Easy</label>
+      
+          <input type="radio" id="passwordChoice2"
+           name="Password" value="10">
+          <label for="passwordChoice2">Medium</label>
+      
+          <input type="radio" id="passwordChoice3"
+           name="Password" value="15">
+          <label for="passwordChoice3">Hard</label>
+        </div>
+        <button id="btn">Generate Passwords</button>
+      </div>
+      <hr>
+    <div class="passwords">
+      <div class="pword">
+        <p id="pass-one"></p>
+      </div>
+      <div class="pword">
+        <p id="pass-two"></p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
