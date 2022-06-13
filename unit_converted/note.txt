@@ -1,0 +1,17 @@
+How it works
+User enters a value and click convert.
+Computer output the converted values in various units
+
+steps
+1. Get the output class or ID
+2. get the submit button class
+3. get the classes for units output:
+    length: feet and meters
+    volume: gallons and litres
+    mass: pounds and kilos
+Add click event listener to the button to do the following conversion:
+    output (feet) = input num * 3.281
+
+1 meter = 3.281 feet
+1 liter = 0.264 gallon
+1 kilogram = 2.204 pound
