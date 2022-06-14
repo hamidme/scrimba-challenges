@@ -17,7 +17,7 @@ const calculator = function (userInput, constant){
     unit2: output/input unit
     constVal: conversion factor
 */
-const convert = function(name, siblingPos, unit1, unit2, constVal){
+const convert = function(metricName, siblingPos, unit1, unit2, constVal){
     let givenValue = elInputValue.value
     
     //check if the input value not is empty and is a number
@@ -34,9 +34,9 @@ const convert = function(name, siblingPos, unit1, unit2, constVal){
 
 //generate output value of each converter
 function generateOutput(){
-    convert(name="Length", siblingPos = 0, unit1='meter', unit2='feet', constVal=0.304785)
-    convert(name="Volume", siblingPos = 1, unit1='liters', unit2='gallons', constVal=0.264)
-    convert(name="Mass", siblingPos = 2, unit1='kilos', unit2='pounds', constVal=2.204)
+    convert(metricName="Length", siblingPos = 0, unit1='meter', unit2='feet', constVal=0.304785)
+    convert(metricName="Volume", siblingPos = 1, unit1='liters', unit2='gallons', constVal=0.264)
+    convert(metricName="Mass", siblingPos = 2, unit1='kilos', unit2='pounds', constVal=2.204)
 }
 
 //run the generate out when the convert button is clicked
