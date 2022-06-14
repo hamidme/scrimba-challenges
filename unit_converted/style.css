@@ -17,7 +17,7 @@ body{
   align-items: center;
 }
 .wrapper {
-  width: 40%;
+  width: 50%;
   margin: 100px auto;
 }
 
@@ -28,12 +28,12 @@ header {
   width: 100%;
 }
 
- header h1 .title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: -0.03em;
+ header .title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
  }
 
  header .unit-value {
@@ -96,3 +96,21 @@ section .unit-output {
   margin-top: 8px;
 }
 
+@media screen and (max-width: 600px) {
+   header .title {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+         }
+    section .unit-title {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+         }
+}
